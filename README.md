@@ -70,7 +70,6 @@
 #### [Air-Cursor](https://github.com/Mystifying7/AirCursor)
 <img align="right" width="200" alt="Aircursor1" src="https://github.com/user-attachments/assets/a6e0ca54-0285-4e72-8504-ee993aa6c90a" />
 
-
 *Gesture-Controlled Interface — Hands-free spatial navigation for web interfaces.*
 
 **Stack:** Python · OpenCV · WebSockets · Vanilla JavaScript
