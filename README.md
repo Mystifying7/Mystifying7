@@ -35,7 +35,7 @@
 
 #### [Kavacham](https://github.com/hackerskr76/Kavacham-Citadel1.0)
 
-<img align="right" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/37486a09-dfc4-429c-a10a-6a76f2dfac68" />
+<img align="center" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/37486a09-dfc4-429c-a10a-6a76f2dfac68" />
 *Cyber Security & Data Privacy — Detect outbound exposure and inspect APK risk.*
 - Preserves encrypted evidence, prepares erasure requests, and organises a reviewable escalation timeline.
 - 🎥 **[Watch the Demo on YouTube](https://youtu.be/BeWeT9qgZ6U?si=_m7GKTOtG2QgaveM)**
