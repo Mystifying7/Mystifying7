@@ -1,5 +1,6 @@
 <!-- BANNER -->
-<img width="1584" height="396" alt="CS Student  AIML Enthusiast" src="https://github.com/user-attachments/assets/2572fb3f-d2f2-44ec-a96e-f8dd1f7659ee" />
+<img width="1584" height="396" alt="LinkedIn banner Rehan" src="https://github.com/user-attachments/assets/d6f2f534-ff40-45d0-8371-f2ec0528e410" />
+
 
 
 <h1 align="center">Hi 👋, I'm Md Rehan Alam</h1>
