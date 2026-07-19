@@ -36,11 +36,6 @@
 #### [Kavacham](https://github.com/hackerskr76/Kavacham-Citadel1.0)
 
 <img align="center" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/37486a09-dfc4-429c-a10a-6a76f2dfac68" />
-<img align="center" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/f7fe98bb-ed8e-43b7-a6e0-9bf76282aa9c" />
-<img align="center" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/9217e07e-03bb-494c-a5b3-2361110221d5" />
-<img align="center" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/86ccca21-925d-4bc6-9df6-a0f64123a2e3" />
-<img align="center" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/9a2669cf-2575-44ed-a9ad-2a7d6809ffd7" />
-<img align="center" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/f4dc5310-4521-463f-8b02-d784ddb883d9" />
 
 
 
@@ -59,7 +54,6 @@
 
 #### [PROP_ENGINE.ai](https://github.com/Mystifying7/House_Price_Project)
 <img allign="center" width="200" alt="PropEngine Demo" src="https://github.com/user-attachments/assets/857cec57-2cce-4950-998c-5dbe6ad99318" />
-<img allign="center" width="200" alt="PropEngine Demo" src="https://github.com/user-attachments/assets/47c9d971-e063-44ed-8c47-339d73c925b4" />
 
 
 
@@ -74,8 +68,6 @@
 
 #### [Virtual-Steering-Wheel-Master](https://github.com/Mystifying7/virtual-steering-wheel-master)
 <img align="center" width="200" alt="Virtual-Steering-Wheel Demo" src="https://github.com/user-attachments/assets/a0dad9e9-3553-4baa-b196-c7ab4170e8ec" />
-<img align="center" width="200" alt="Virtual-Steering-Wheel Demo" src="https://github.com/user-attachments/assets/468233cc-ac76-4a61-a977-7c9cfd6e8939" />
-<img align="center" width="200" alt="Virtual-Steering-Wheel Demo" src="https://github.com/user-attachments/assets/50553c23-9b79-4a24-9f65-9a5584949caf" />
 
 
 
@@ -90,7 +82,6 @@
 
 #### [Air-Cursor](https://github.com/Mystifying7/AirCursor)
 <img align="lefft" width="200" alt="Aircursor1" src="https://github.com/user-attachments/assets/a6e0ca54-0285-4e72-8504-ee993aa6c90a" />
-<img align="left" src="https://github.com/user-attachments/assets/b276fac7-309a-470a-91e1-dbf241d7e9c1" width="200"  alt="Air Cursor Demo"/>
 
 
 *Gesture-Controlled Interface — Hands-free spatial navigation for web interfaces.*
