@@ -1,5 +1,5 @@
 <!-- BANNER -->
-<img width="1584" height="396" alt="LinkedIn banner Rehan" src="https://github.com/user-attachments/assets/d6f2f534-ff40-45d0-8371-f2ec0528e410" />
+<img width="1584" height="396" alt="LinkedIn banner Rehan" src="https://github.com/user-attachments/assets/31d100c8-e581-40b8-a843-fb10ca2fbdeb" />
 
 
 
