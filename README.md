@@ -47,7 +47,7 @@
 
 #### [PROP_ENGINE.ai](https://github.com/Mystifying7/House_Price_Project)
 
-<img allign="right" width="200" alt="PropEngine Demo" src="https://github.com/user-attachments/assets/857cec57-2cce-4950-998c-5dbe6ad99318" />
+<img align="right" width="200" alt="PropEngine Demo" src="https://github.com/user-attachments/assets/857cec57-2cce-4950-998c-5dbe6ad99318" />
 
 *Full-Stack PropTech — Real-time real estate valuations powered by Machine Learning.*
 
