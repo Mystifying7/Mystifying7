@@ -51,14 +51,17 @@
 <br clear="right"/>
 
 #### [Virtual-Steering-Wheel-Master](https://github.com/Mystifying7/virtual-steering-wheel-master)
+
 <img align="center" width="200" alt="Virtual-Steering-Wheel Demo" src="https://github.com/user-attachments/assets/a0dad9e9-3553-4baa-b196-c7ab4170e8ec" />
+
 *Computer Vision & HCI — Low-latency virtual steering controls.*
+
 - A Python application that leverages real-time hand-tracking algorithms to seamlessly translate live webcam video feeds into accurate gaming inputs.
 
 <br clear="right"/>
 
 #### [Air-Cursor](https://github.com/Mystifying7/AirCursor)
-<img align="lefft" width="200" alt="Aircursor1" src="https://github.com/user-attachments/assets/a6e0ca54-0285-4e72-8504-ee993aa6c90a" />
+<img align="right" width="200" alt="Aircursor1" src="https://github.com/user-attachments/assets/a6e0ca54-0285-4e72-8504-ee993aa6c90a" />
 
 
 *Gesture-Controlled Interface — Hands-free spatial navigation for web interfaces.*
