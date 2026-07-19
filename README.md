@@ -1,16 +1,168 @@
-## Hi there 👋
+<!-- BANNER -->
+<img width="1584" height="396" alt="CS Student  AIML Enthusiast" src="https://github.com/user-attachments/assets/2572fb3f-d2f2-44ec-a96e-f8dd1f7659ee" />
 
-<!--
-**Mystifying7/Mystifying7** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+<h1 align="center">Hi 👋, I'm Md Rehan Alam</h1>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center">
+  <a href="https://github.com/Mystifying7">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=25&pause=1000&color=2196F3&center=true&vCenter=true&width=600&lines=Passionate+AI+Engineer;Computer+Science+Student+%26+Collaborator" alt="Typing SVG" />
+  </a>
+</p>
+
+<p align="center">
+  <em>Constantly learning, building, and exploring the world of Artificial Intelligence and Software Development.</em>
+</p>
+
+<p align="center">
+  <a href="mailto:reahanalam700000@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://linkedin.com/in/rehanalam07"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+</p>
+
+---
+
+### 👨‍💻 About Me
+
+- 🎓 **Background:** 5th-semester Computer Science Student.
+- 🌱 **Currently Learning:** Honing my core skills in AI, Data Structures, and Machine Learning.
+- 🤝 **Collaboration:** Open to collaborating on exciting tech projects and providing tech support.
+
+- 📫 **Reach Me At:** [reahanalam700000@gmail.com](mailto:reahanalam700000@gmail.com)
+
+---
+
+### 📁 Featured Projects
+
+#### [Kavacham](https://github.com/hackerskr76/Kavacham-Citadel1.0)
+
+<img align="center" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/37486a09-dfc4-429c-a10a-6a76f2dfac68" />
+<img align="center" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/f7fe98bb-ed8e-43b7-a6e0-9bf76282aa9c" />
+<img align="center" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/9217e07e-03bb-494c-a5b3-2361110221d5" />
+<img align="center" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/86ccca21-925d-4bc6-9df6-a0f64123a2e3" />
+<img align="center" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/9a2669cf-2575-44ed-a9ad-2a7d6809ffd7" />
+<img align="center" width="200" alt="Kavacham Demo" src="https://github.com/user-attachments/assets/f4dc5310-4521-463f-8b02-d784ddb883d9" />
+
+
+
+
+
+
+
+*Cyber Security & Data Privacy — Detect outbound exposure and inspect APK risk.*
+
+**Stack:** React · TypeScript · Web Crypto API · IndexedDB
+
+- Preserves encrypted evidence, prepares erasure requests, and organises a reviewable escalation timeline.
+- 🎥 **[Watch the Demo on YouTube](https://youtu.be/BeWeT9qgZ6U?si=_m7GKTOtG2QgaveM)**
+
+<br clear="right"/>
+
+#### [PROP_ENGINE.ai](https://github.com/Mystifying7/House_Price_Project)
+<img allign="center" width="200" alt="PropEngine Demo" src="https://github.com/user-attachments/assets/857cec57-2cce-4950-998c-5dbe6ad99318" />
+<img allign="center" width="200" alt="PropEngine Demo" src="https://github.com/user-attachments/assets/47c9d971-e063-44ed-8c47-339d73c925b4" />
+
+
+
+*Full-Stack PropTech — Real-time real estate valuations powered by Machine Learning.*
+
+**Stack:** React.js · Python · Flask · Scikit-Learn · Pandas
+
+- Leverages Scikit-Learn ML models to provide highly accurate property valuations across multiple Indian cities based on historical data vectors.
+- 🌐 **[View Live Project](https://house-price-project-ten.vercel.app/)**
+
+<br clear="right"/>
+
+#### [Virtual-Steering-Wheel-Master](https://github.com/Mystifying7/virtual-steering-wheel-master)
+<img align="center" width="200" alt="Virtual-Steering-Wheel Demo" src="https://github.com/user-attachments/assets/a0dad9e9-3553-4baa-b196-c7ab4170e8ec" />
+<img align="center" width="200" alt="Virtual-Steering-Wheel Demo" src="https://github.com/user-attachments/assets/468233cc-ac76-4a61-a977-7c9cfd6e8939" />
+<img align="center" width="200" alt="Virtual-Steering-Wheel Demo" src="https://github.com/user-attachments/assets/50553c23-9b79-4a24-9f65-9a5584949caf" />
+
+
+
+
+*Computer Vision & HCI — Low-latency virtual steering controls.*
+
+**Stack:** Python · OpenCV · MediaPipe · NumPy
+
+- A Python application that leverages real-time hand-tracking algorithms to seamlessly translate live webcam video feeds into accurate gaming inputs.
+
+<br clear="right"/>
+
+#### [Air-Cursor](https://github.com/Mystifying7/AirCursor)
+<img align="lefft" width="200" alt="Aircursor1" src="https://github.com/user-attachments/assets/a6e0ca54-0285-4e72-8504-ee993aa6c90a" />
+<img align="left" src="https://github.com/user-attachments/assets/b276fac7-309a-470a-91e1-dbf241d7e9c1" width="200"  alt="Air Cursor Demo"/>
+
+
+*Gesture-Controlled Interface — Hands-free spatial navigation for web interfaces.*
+
+**Stack:** Python · OpenCV · WebSockets · Vanilla JavaScript
+
+- A real-time interactive web portfolio bypassing physical mouse inputs entirely through robust hand-tracking and WebSocket frontend communication.
+
+<br clear="right"/>
+
+---
+
+### 💻 Tech Stack & Arsenal
+
+**Core Languages**
+<p align="left">
+  <img src="https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C" />
+  <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
+  <img src="https://img.shields.io/badge/Verilog-%232C2255.svg?style=for-the-badge&logo=verilog&logoColor=white" alt="Verilog" />
+  <img src="https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+</p>
+
+**Data Science & AI**
+<p align="left">
+  <img src="https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white" alt="Anaconda" />
+</p>
+
+**Databases & Backend**
+<p align="left">
+  <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Firebase-%23039BE5.svg?style=for-the-badge&logo=firebase&logoColor=white" alt="Firebase" />
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
+  <img src="https://img.shields.io/badge/Apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white" alt="Apache" />
+</p>
+
+**Tools & Creative**
+<p align="left">
+  <img src="https://img.shields.io/badge/VS%20Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code" />
+  <img src="https://img.shields.io/badge/PyCharm-000000.svg?style=for-the-badge&logo=PyCharm&logoColor=white" alt="PyCharm" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=for-the-badge&logo=Adobe%20Premiere%20Pro&logoColor=white" alt="Premiere Pro" />
+</p>
+
+---
+
+### 🏆 Achievements & GitHub Stats
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Mystifying7&theme=radical" alt="GitHub Stats" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Mystifying7&theme=radical" alt="Top Languages" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com/?user=Mystifying7&theme=radical&hide_border=false" alt="GitHub Streak" />
+</div>
+
+<br>
+
+---
+
+<p align="center">
+  <em>Thank you for visiting my profile! Feel free to reach out for collaborations.</em>
+</p>
