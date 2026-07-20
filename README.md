@@ -18,7 +18,7 @@
 <p align="center">
   <a href="mailto:reahanalam700000@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://linkedin.com/in/rehanalam07"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="YOUR_PORTFOLIO_LINK_HERE"><img src="https://img.shields.io/badge/Portfolio-252525?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://rehanportfolio-chi.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-252525?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
 </p>
 
 ---
@@ -29,7 +29,7 @@
 - 🌱 **Currently Learning:** Honing my core skills in AI, Data Structures, and Machine Learning.
 - 🤝 **Collaboration:** Open to collaborating on exciting tech projects and providing tech support.
 
-- 📫 **Reach Me At:** [reahanalam700000@gmail.com](mailto:reahanalam700000@gmail.com)
+- 📫 **Reach Me At:** [reahanalam700000@gmail.com](mailto:rehanalam700000@gmail.com)
 
 ---
 
