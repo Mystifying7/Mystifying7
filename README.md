@@ -42,7 +42,6 @@
 *Cyber Security & Data Privacy — Detect outbound exposure and inspect APK risk.*
 
 - Preserves encrypted evidence, prepares erasure requests, and organises a reviewable escalation timeline.
-- 
 - 🎥 **[Watch the Demo on YouTube](https://youtu.be/BeWeT9qgZ6U?si=_m7GKTOtG2QgaveM)**
 
 <br clear="right"/>
@@ -54,7 +53,6 @@
 *Full-Stack PropTech — Real-time real estate valuations powered by Machine Learning.*
 
 - Leverages Scikit-Learn ML models to provide highly accurate property valuations across multiple Indian cities based on historical data vectors.
-- 
 - 🌐 **[View Live Project](https://house-price-project-ten.vercel.app/)**
 
 <br clear="right"/>
