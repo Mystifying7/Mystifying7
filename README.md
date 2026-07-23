@@ -169,23 +169,21 @@ Gesture-Controlled Interface — Hands-free spatial navigation for web interface
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mystifying7&theme=tokyonight&hide_border=true&fire=8A2BE2&ring=4B0082&currStreakLabel=A970FF" alt="GitHub Streak" />
 </div>
 
-<br>
+<!-- <br>
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Mystifying7&theme=radical" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Mystifying7&theme=tokyonight&show_icons=true&hide_border=false" alt="GitHub Stats" />
 </div>
 
 
 <br>
 
-
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Mystifying7&theme=radical" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mystifying7&theme=tokyonight&layout=compact&hide_border=false" alt="Top Languages" width="80%" />
 </div>
 
 
 
-
-<br>
+<br> -->
 
 ---
 
