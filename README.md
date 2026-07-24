@@ -151,7 +151,23 @@ Gesture-Controlled Interface — Hands-free spatial navigation for web interface
 
 **Project Explanation:** Developed a hands-free navigation tool that pairs a Python-based computer vision backend with a JavaScript web frontend. The system relies on WebSockets to map hand gestures to real-time DOM interactions, completely bypassing the need for a physical mouse.
 </details>
+<details>
+<summary><b>🎬 CineMind AI</b></summary>
+<br>
+AI-Powered Recommendation Engine — Content-based movie discovery driven by NLP & Cosine Similarity.
 
+| Category | Details |
+| :--- | :--- |
+| **Stack** | Python, FastAPI, Scikit-Learn, Pandas, Vanilla JS |
+| **Scale** | 4,800+ movies dataset processing |
+| **Performance** | High-speed vector similarity matrix calculations |
+| **Architecture** | Decoupled RESTful API with LocalStorage state management |
+| **Impact** | Instant, personalized film discovery with interactive glassmorphism UI |
+| **Repository** | [View on GitHub](https://github.com/Mystifying7/Movie--Recommender) |
+| **Image** |  <img width="200" alt="Movie-Recommender" src="https://github.com/user-attachments/assets/4495b620-e326-4228-9842-870b6f9d7754" /> |
+
+**Project Explanation:** Built an end-to-end content-based movie recommendation system that utilizes NLP (CountVectorizer & PorterStemmer) and Cosine Similarity to calculate real-time similarity scores across 4,800+ films. Features a high-performance FastAPI backend paired with a responsive Vanilla JS frontend with autocomplete search, dynamic TMDB poster rendering, and watchlist persistence.
+</details>
 
 
 
