@@ -110,6 +110,7 @@ Full-Stack PropTech — Real-time real estate valuations powered by Machine Lear
 | **Security** | Web API input validation |
 | **Impact** | Provides transparent property pricing using historical data vectors |
 | **Repository** | [View on GitHub](https://github.com/Mystifying7/House_Price_Project) |
+| **Live** | [Live](https://house-price-project-ten.vercel.app/) |
 | **Image** | <img width="200" alt="PropEngine Demo" src="https://github.com/user-attachments/assets/857cec57-2cce-4950-998c-5dbe6ad99318" /> | 
 
 **Project Explanation:** Engineered a predictive platform using supervised Machine Learning algorithms. By processing structured historical real estate data, the application successfully delivers dynamic and highly accurate property valuations through an accessible web interface.
