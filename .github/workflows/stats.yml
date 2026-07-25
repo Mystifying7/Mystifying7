@@ -1,0 +1,88 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub Stats
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p assets
+
+          curl -L \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/users/Mystifying7" \
+            -o assets/profile.json
+
+      - name: Create Stats SVG
+        run: |
+          python3 <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.load(open("assets/profile.json"))
+
+          username = data.get("login", "Mystifying7")
+          repos = data.get("public_repos", 0)
+          followers = data.get("followers", 0)
+          following = data.get("following", 0)
+
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="495" height="220" viewBox="0 0 495 220">
+            <rect width="495" height="220" rx="15" fill="#1a1b27"/>
+            <text x="30" y="45" fill="#70a5fd" font-size="24" font-family="Arial" font-weight="bold">
+              GitHub Stats
+            </text>
+
+            <text x="30" y="90" fill="#ffffff" font-size="17" font-family="Arial">
+              Public Repositories
+            </text>
+            <text x="450" y="90" text-anchor="end" fill="#70a5fd" font-size="20" font-family="Arial" font-weight="bold">
+              {repos}
+            </text>
+
+            <text x="30" y="130" fill="#ffffff" font-size="17" font-family="Arial">
+              Followers
+            </text>
+            <text x="450" y="130" text-anchor="end" fill="#70a5fd" font-size="20" font-family="Arial" font-weight="bold">
+              {followers}
+            </text>
+
+            <text x="30" y="170" fill="#ffffff" font-size="17" font-family="Arial">
+              Following
+            </text>
+            <text x="450" y="170" text-anchor="end" fill="#70a5fd" font-size="20" font-family="Arial" font-weight="bold">
+              {following}
+            </text>
+
+            <text x="30" y="205" fill="#8b949e" font-size="12" font-family="Arial">
+              github.com/{username}
+            </text>
+          </svg>'''
+
+          Path("assets/github-stats.svg").write_text(svg)
+          PY
+
+      - name: Commit Stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/github-stats.svg assets/profile.json
+
+          git diff --cached --quiet || git commit -m "Update GitHub stats"
+
+          git push
