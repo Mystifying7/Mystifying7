@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+width="495"
+height="280"
+viewBox="0 0 495 280">
+
+<rect
+  width="495"
+  height="280"
+  rx="15"
+  fill="#1a1b27"
+/>
+
+<text
+  x="30"
+  y="45"
+  fill="#70a5fd"
+  font-size="24"
+  font-family="Arial, sans-serif"
+  font-weight="bold">
+  Top Languages
+</text>
+
+    <text
+      x="30"
+      y="85"
+      fill="#ffffff"
+      font-size="15"
+      font-family="Arial, sans-serif">
+      JavaScript
+    </text>
+
+    <text
+      x="450"
+      y="85"
+      text-anchor="end"
+      fill="#70a5fd"
+      font-size="15"
+      font-family="Arial, sans-serif">
+      53.0%
+    </text>
+
+    <rect
+      x="30"
+      y="95"
+      width="420"
+      height="6"
+      rx="3"
+      fill="#30363d"
+    />
+
+    <rect
+      x="30"
+      y="95"
+      width="222.53613253655115"
+      height="6"
+      rx="3"
+      fill="#70a5fd"
+    />
+    
+    <text
+      x="30"
+      y="120"
+      fill="#ffffff"
+      font-size="15"
+      font-family="Arial, sans-serif">
+      Python
+    </text>
+
+    <text
+      x="450"
+      y="120"
+      text-anchor="end"
+      fill="#70a5fd"
+      font-size="15"
+      font-family="Arial, sans-serif">
+      27.9%
+    </text>
+
+    <rect
+      x="30"
+      y="130"
+      width="420"
+      height="6"
+      rx="3"
+      fill="#30363d"
+    />
+
+    <rect
+      x="30"
+      y="130"
+      width="117.04273110694812"
+      height="6"
+      rx="3"
+      fill="#70a5fd"
+    />
+    
+    <text
+      x="30"
+      y="155"
+      fill="#ffffff"
+      font-size="15"
+      font-family="Arial, sans-serif">
+      CSS
+    </text>
+
+    <text
+      x="450"
+      y="155"
+      text-anchor="end"
+      fill="#70a5fd"
+      font-size="15"
+      font-family="Arial, sans-serif">
+      11.0%
+    </text>
+
+    <rect
+      x="30"
+      y="165"
+      width="420"
+      height="6"
+      rx="3"
+      fill="#30363d"
+    />
+
+    <rect
+      x="30"
+      y="165"
+      width="46.18193425500518"
+      height="6"
+      rx="3"
+      fill="#70a5fd"
+    />
+    
+    <text
+      x="30"
+      y="190"
+      fill="#ffffff"
+      font-size="15"
+      font-family="Arial, sans-serif">
+      HTML
+    </text>
+
+    <text
+      x="450"
+      y="190"
+      text-anchor="end"
+      fill="#70a5fd"
+      font-size="15"
+      font-family="Arial, sans-serif">
+      8.2%
+    </text>
+
+    <rect
+      x="30"
+      y="200"
+      width="420"
+      height="6"
+      rx="3"
+      fill="#30363d"
+    />
+
+    <rect
+      x="30"
+      y="200"
+      width="34.239202101495536"
+      height="6"
+      rx="3"
+      fill="#70a5fd"
+    />
+    </svg>

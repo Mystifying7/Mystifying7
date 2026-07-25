@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+width="495"
+height="220"
+viewBox="0 0 495 220">
+
+<rect
+  width="495"
+  height="220"
+  rx="15"
+  fill="#1a1b27"
+/>
+
+<text
+  x="30"
+  y="45"
+  fill="#70a5fd"
+  font-size="24"
+  font-family="Arial, sans-serif"
+  font-weight="bold">
+  GitHub Stats
+</text>
+
+<text
+  x="30"
+  y="90"
+  fill="#ffffff"
+  font-size="16"
+  font-family="Arial, sans-serif">
+  Public Repositories
+</text>
+
+<text
+  x="450"
+  y="90"
+  text-anchor="end"
+  fill="#70a5fd"
+  font-size="20"
+  font-family="Arial, sans-serif"
+  font-weight="bold">
+  8
+</text>
+
+<text
+  x="30"
+  y="130"
+  fill="#ffffff"
+  font-size="16"
+  font-family="Arial, sans-serif">
+  Followers
+</text>
+
+<text
+  x="450"
+  y="130"
+  text-anchor="end"
+  fill="#70a5fd"
+  font-size="20"
+  font-family="Arial, sans-serif"
+  font-weight="bold">
+  8
+</text>
+
+<text
+  x="30"
+  y="170"
+  fill="#ffffff"
+  font-size="16"
+  font-family="Arial, sans-serif">
+  Following
+</text>
+
+<text
+  x="450"
+  y="170"
+  text-anchor="end"
+  fill="#70a5fd"
+  font-size="20"
+  font-family="Arial, sans-serif"
+  font-weight="bold">
+  5
+</text>
+
+<text
+  x="30"
+  y="205"
+  fill="#8b949e"
+  font-size="12"
+  font-family="Arial, sans-serif">
+  github.com/Mystifying7
+</text>
+
+</svg>
