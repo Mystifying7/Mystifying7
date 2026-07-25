@@ -33,9 +33,17 @@ jobs:
       # ---------------------------------------
       # 3. Create Assets Folder
       # ---------------------------------------
-      - name: Create Assets Folder
+      - name: Prepare Stats Directory
         run: |
-          mkdir -p assets || true
+          mkdir -p generated-stats
+          echo "Current directory:"
+          pwd
+            
+          echo "Repository contents:"
+          ls -la
+            
+          echo "Stats directory:"
+          ls -la generated-stats
 
       # ---------------------------------------
       # 4. Generate GitHub Stats
@@ -162,7 +170,7 @@ jobs:
 
           </svg>'''
 
-          Path("assets/github-stats.svg").write_text(svg)
+          Path("generated-stats/github-stats.svg").write_text(svg)
 
           print("GitHub Stats generated successfully.")
           PY
@@ -315,7 +323,7 @@ jobs:
 
           svg += "</svg>"
 
-          Path("assets/top-languages.svg").write_text(svg)
+          Path("generated-stats/top-languages.svg").write_text(svg)
 
           print("Top Languages generated successfully.")
           PY
@@ -493,7 +501,7 @@ jobs:
 
               </svg>'''
 
-          Path("assets/streak.svg").write_text(svg)
+          Path("generated-stats/streak.svg").write_text(svg)
 
           print("Contribution Streak generated successfully.")
           PY
@@ -506,7 +514,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add assets/
+          git add generated-stats/
 
           git diff --cached --quiet || git commit -m "Update GitHub profile stats"
 
