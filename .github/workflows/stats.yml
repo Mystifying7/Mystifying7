@@ -2,10 +2,8 @@ name: Update GitHub Profile Stats
 
 on:
   schedule:
-    # Runs every day at midnight UTC
     - cron: "0 0 * * *"
 
-  # Allows you to manually run the workflow
   workflow_dispatch:
 
 permissions:
@@ -17,7 +15,7 @@ jobs:
 
     steps:
       # ---------------------------------------
-      # 1. Checkout Repository
+      # 1. Checkout
       # ---------------------------------------
       - name: Checkout Repository
         uses: actions/checkout@v5
@@ -31,22 +29,14 @@ jobs:
           python-version: "3.12"
 
       # ---------------------------------------
-      # 3. Create Assets Folder
+      # 3. Prepare Directory
       # ---------------------------------------
       - name: Prepare Stats Directory
         run: |
           mkdir -p generated-stats
-          echo "Current directory:"
-          pwd
-            
-          echo "Repository contents:"
-          ls -la
-            
-          echo "Stats directory:"
-          ls -la generated-stats
 
       # ---------------------------------------
-      # 4. Generate GitHub Stats
+      # 4. Generate Premium GitHub Stats
       # ---------------------------------------
       - name: Generate GitHub Stats
         env:
@@ -55,19 +45,25 @@ jobs:
           python3 <<'PY'
           import urllib.request
           import json
+          import os
           from pathlib import Path
 
           username = "Mystifying7"
 
+          headers = {
+              "Accept": "application/vnd.github+json",
+              "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
+              "X-GitHub-Api-Version": "2022-11-28"
+          }
+
+          # -----------------------------
+          # Fetch profile
+          # -----------------------------
           url = f"https://api.github.com/users/{username}"
 
           request = urllib.request.Request(
               url,
-              headers={
-                  "Accept": "application/vnd.github+json",
-                  "Authorization": f"Bearer {__import__('os').environ['GH_TOKEN']}",
-                  "X-GitHub-Api-Version": "2022-11-28"
-              }
+              headers=headers
           )
 
           with urllib.request.urlopen(request) as response:
@@ -77,103 +73,275 @@ jobs:
           followers = data.get("followers", 0)
           following = data.get("following", 0)
 
+          # -----------------------------
+          # SVG
+          # -----------------------------
           svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
-          width="495"
-          height="220"
-          viewBox="0 0 495 220">
+          width="820"
+          height="260"
+          viewBox="0 0 820 260">
+
+          <defs>
+
+            <linearGradient id="bg"
+              x1="0%" y1="0%"
+              x2="100%" y2="100%">
+
+              <stop offset="0%"
+                stop-color="#161b22"/>
+
+              <stop offset="100%"
+                stop-color="#0d1117"/>
+
+            </linearGradient>
+
+            <linearGradient id="accent"
+              x1="0%" y1="0%"
+              x2="100%" y2="0%">
+
+              <stop offset="0%"
+                stop-color="#58a6ff"/>
+
+              <stop offset="100%"
+                stop-color="#a371f7"/>
+
+            </linearGradient>
+
+            <filter id="shadow">
+              <feDropShadow
+                dx="0"
+                dy="8"
+                stdDeviation="12"
+                flood-opacity="0.35"/>
+            </filter>
+
+          </defs>
+
+          <!-- Main Card -->
 
           <rect
-            width="495"
-            height="220"
-            rx="15"
-            fill="#1a1b27"
+            x="2"
+            y="2"
+            width="816"
+            height="256"
+            rx="20"
+            fill="url(#bg)"
+            stroke="#30363d"
+            stroke-width="1"
+            filter="url(#shadow)"
+          />
+
+          <!-- Accent -->
+
+          <rect
+            x="2"
+            y="2"
+            width="816"
+            height="5"
+            rx="3"
+            fill="url(#accent)"
+          />
+
+          <!-- Header -->
+
+          <text
+            x="35"
+            y="48"
+            fill="#f0f6fc"
+            font-size="23"
+            font-family="Arial, sans-serif"
+            font-weight="bold">
+
+            GitHub Overview
+
+          </text>
+
+          <text
+            x="35"
+            y="75"
+            fill="#8b949e"
+            font-size="13"
+            font-family="Arial, sans-serif">
+
+            @{username} • Developer Activity
+
+          </text>
+
+
+          <!-- Divider -->
+
+          <line
+            x1="35"
+            y1="95"
+            x2="785"
+            y2="95"
+            stroke="#21262d"
+          />
+
+
+          <!-- Metric Card 1 -->
+
+          <rect
+            x="35"
+            y="115"
+            width="230"
+            height="105"
+            rx="14"
+            fill="#161b22"
+            stroke="#30363d"
           />
 
           <text
-            x="30"
-            y="45"
-            fill="#70a5fd"
-            font-size="24"
-            font-family="Arial, sans-serif"
-            font-weight="bold">
-            GitHub Stats
-          </text>
-
-          <text
-            x="30"
-            y="90"
-            fill="#ffffff"
-            font-size="16"
-            font-family="Arial, sans-serif">
-            Public Repositories
-          </text>
-
-          <text
-            x="450"
-            y="90"
-            text-anchor="end"
-            fill="#70a5fd"
-            font-size="20"
-            font-family="Arial, sans-serif"
-            font-weight="bold">
-            {repos}
-          </text>
-
-          <text
-            x="30"
-            y="130"
-            fill="#ffffff"
-            font-size="16"
-            font-family="Arial, sans-serif">
-            Followers
-          </text>
-
-          <text
-            x="450"
-            y="130"
-            text-anchor="end"
-            fill="#70a5fd"
-            font-size="20"
-            font-family="Arial, sans-serif"
-            font-weight="bold">
-            {followers}
-          </text>
-
-          <text
-            x="30"
-            y="170"
-            fill="#ffffff"
-            font-size="16"
-            font-family="Arial, sans-serif">
-            Following
-          </text>
-
-          <text
-            x="450"
-            y="170"
-            text-anchor="end"
-            fill="#70a5fd"
-            font-size="20"
-            font-family="Arial, sans-serif"
-            font-weight="bold">
-            {following}
-          </text>
-
-          <text
-            x="30"
-            y="205"
+            x="58"
+            y="145"
             fill="#8b949e"
-            font-size="12"
-            font-family="Arial, sans-serif">
+            font-size="13"
+            font-family="Arial">
+
+            PUBLIC REPOSITORIES
+
+          </text>
+
+          <text
+            x="58"
+            y="188"
+            fill="#58a6ff"
+            font-size="32"
+            font-family="Arial"
+            font-weight="bold">
+
+            {repos}
+
+          </text>
+
+          <text
+            x="58"
+            y="207"
+            fill="#6e7681"
+            font-size="11"
+            font-family="Arial">
+
+            Open source projects
+
+          </text>
+
+
+          <!-- Metric Card 2 -->
+
+          <rect
+            x="295"
+            y="115"
+            width="230"
+            height="105"
+            rx="14"
+            fill="#161b22"
+            stroke="#30363d"
+          />
+
+          <text
+            x="318"
+            y="145"
+            fill="#8b949e"
+            font-size="13"
+            font-family="Arial">
+
+            FOLLOWERS
+
+          </text>
+
+          <text
+            x="318"
+            y="188"
+            fill="#a371f7"
+            font-size="32"
+            font-family="Arial"
+            font-weight="bold">
+
+            {followers}
+
+          </text>
+
+          <text
+            x="318"
+            y="207"
+            fill="#6e7681"
+            font-size="11"
+            font-family="Arial">
+
+            Developer network
+
+          </text>
+
+
+          <!-- Metric Card 3 -->
+
+          <rect
+            x="555"
+            y="115"
+            width="230"
+            height="105"
+            rx="14"
+            fill="#161b22"
+            stroke="#30363d"
+          />
+
+          <text
+            x="578"
+            y="145"
+            fill="#8b949e"
+            font-size="13"
+            font-family="Arial">
+
+            FOLLOWING
+
+          </text>
+
+          <text
+            x="578"
+            y="188"
+            fill="#3fb950"
+            font-size="32"
+            font-family="Arial"
+            font-weight="bold">
+
+            {following}
+
+          </text>
+
+          <text
+            x="578"
+            y="207"
+            fill="#6e7681"
+            font-size="11"
+            font-family="Arial">
+
+            Developers & creators
+
+          </text>
+
+
+          <!-- Footer -->
+
+          <text
+            x="35"
+            y="245"
+            fill="#6e7681"
+            font-size="10"
+            font-family="Arial">
+
             github.com/{username}
+
           </text>
 
           </svg>'''
 
-          Path("generated-stats/github-stats.svg").write_text(svg)
+          Path(
+              "generated-stats/github-stats.svg"
+          ).write_text(svg)
 
-          print("GitHub Stats generated successfully.")
+          print("Premium GitHub Stats generated.")
           PY
+
 
       # ---------------------------------------
       # 5. Generate Top Languages
@@ -196,7 +364,10 @@ jobs:
               "X-GitHub-Api-Version": "2022-11-28"
           }
 
-          repos_url = f"https://api.github.com/users/{username}/repos?per_page=100"
+          repos_url = (
+              f"https://api.github.com/users/"
+              f"{username}/repos?per_page=100"
+          )
 
           request = urllib.request.Request(
               repos_url,
@@ -218,23 +389,26 @@ jobs:
               if not lang_url:
                   continue
 
-              request = urllib.request.Request(
-                  lang_url,
-                  headers=headers
-              )
-
               try:
+
+                  request = urllib.request.Request(
+                      lang_url,
+                      headers=headers
+                  )
+
                   with urllib.request.urlopen(request) as response:
                       repo_languages = json.load(response)
 
-                  for language, bytes_count in repo_languages.items():
+                  for language, value in repo_languages.items():
+
                       languages[language] = (
                           languages.get(language, 0)
-                          + bytes_count
+                          + value
                       )
 
               except Exception:
                   continue
+
 
           languages = sorted(
               languages.items(),
@@ -242,91 +416,203 @@ jobs:
               reverse=True
           )[:6]
 
-          total = sum(value for _, value in languages)
 
-          width = 495
-          height = 280
+          total = sum(
+              value
+              for _, value in languages
+          )
 
-          svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
-          width="{width}"
-          height="{height}"
-          viewBox="0 0 {width} {height}">
+
+          # Language colors
+
+          colors = {
+              "JavaScript": "#f1e05a",
+              "TypeScript": "#3178c6",
+              "Python": "#3572A5",
+              "HTML": "#e34c26",
+              "CSS": "#563d7c",
+              "Java": "#b07219",
+              "C++": "#f34b7d",
+              "C": "#555555",
+              "Jupyter Notebook": "#DA5B0B",
+              "Shell": "#89e051"
+          }
+
+
+          svg = '''
+          <svg xmlns="http://www.w3.org/2000/svg"
+          width="820"
+          height="350"
+          viewBox="0 0 820 350">
+
+          <defs>
+
+            <linearGradient id="langbg"
+              x1="0%" y1="0%"
+              x2="100%" y2="100%">
+
+              <stop offset="0%"
+                stop-color="#161b22"/>
+
+              <stop offset="100%"
+                stop-color="#0d1117"/>
+
+            </linearGradient>
+
+          </defs>
+
 
           <rect
-            width="{width}"
-            height="{height}"
-            rx="15"
-            fill="#1a1b27"
+            x="2"
+            y="2"
+            width="816"
+            height="346"
+            rx="20"
+            fill="url(#langbg)"
+            stroke="#30363d"
           />
 
+
           <text
-            x="30"
-            y="45"
-            fill="#70a5fd"
-            font-size="24"
-            font-family="Arial, sans-serif"
+            x="35"
+            y="48"
+            fill="#f0f6fc"
+            font-size="23"
+            font-family="Arial"
             font-weight="bold">
-            Top Languages
+
+            Most Used Languages
+
           </text>
+
+
+          <text
+            x="35"
+            y="75"
+            fill="#8b949e"
+            font-size="13"
+            font-family="Arial">
+
+            Based on code distribution across public repositories
+
+          </text>
+
+          <line
+            x1="35"
+            y1="95"
+            x2="785"
+            y2="95"
+            stroke="#21262d"
+          />
+
           '''
 
-          y = 85
+          y = 125
 
           for language, value in languages:
 
               percentage = (
-                  (value / total) * 100
+                  value / total * 100
                   if total > 0
                   else 0
               )
 
+              color = colors.get(
+                  language,
+                  "#58a6ff"
+              )
+
+              bar_width = 500
+
+              filled = (
+                  bar_width
+                  * percentage
+                  / 100
+              )
+
               svg += f'''
-              <text
-                x="30"
-                y="{y}"
-                fill="#ffffff"
-                font-size="15"
-                font-family="Arial, sans-serif">
-                {language}
-              </text>
+
+              <circle
+                cx="45"
+                cy="{y - 5}"
+                r="6"
+                fill="{color}"
+              />
 
               <text
-                x="450"
+                x="65"
+                y="{y}"
+                fill="#f0f6fc"
+                font-size="14"
+                font-family="Arial">
+
+                {language}
+
+              </text>
+
+
+              <text
+                x="760"
                 y="{y}"
                 text-anchor="end"
-                fill="#70a5fd"
-                font-size="15"
-                font-family="Arial, sans-serif">
+                fill="#8b949e"
+                font-size="13"
+                font-family="Arial">
+
                 {percentage:.1f}%
+
               </text>
 
-              <rect
-                x="30"
-                y="{y + 10}"
-                width="420"
-                height="6"
-                rx="3"
-                fill="#30363d"
-              />
 
               <rect
-                x="30"
-                y="{y + 10}"
-                width="{420 * percentage / 100}"
-                height="6"
-                rx="3"
-                fill="#70a5fd"
+                x="65"
+                y="{y + 12}"
+                width="{bar_width}"
+                height="7"
+                rx="4"
+                fill="#21262d"
               />
+
+
+              <rect
+                x="65"
+                y="{y + 12}"
+                width="{filled}"
+                height="7"
+                rx="4"
+                fill="{color}"
+              />
+
               '''
 
-              y += 35
+              y += 36
 
-          svg += "</svg>"
 
-          Path("generated-stats/top-languages.svg").write_text(svg)
+          svg += '''
 
-          print("Top Languages generated successfully.")
+          <text
+            x="65"
+            y="330"
+            fill="#6e7681"
+            font-size="10"
+            font-family="Arial">
+
+            github.com/Mystifying7
+
+          </text>
+
+          </svg>
+
+          '''
+
+
+          Path(
+              "generated-stats/top-languages.svg"
+          ).write_text(svg)
+
+          print("Premium language stats generated.")
           PY
+
 
       # ---------------------------------------
       # 6. Generate Contribution Streak
@@ -339,7 +625,7 @@ jobs:
           import urllib.request
           import json
           import os
-          from datetime import datetime, timedelta
+          from datetime import datetime, timezone
           from pathlib import Path
 
           username = "Mystifying7"
@@ -350,16 +636,13 @@ jobs:
               "X-GitHub-Api-Version": "2022-11-28"
           }
 
-          end = datetime.utcnow().date()
-          start = end - timedelta(days=365)
-
-          contributions_url = (
+          url = (
               f"https://api.github.com/users/"
               f"{username}/events/public?per_page=100"
           )
 
           request = urllib.request.Request(
-              contributions_url,
+              url,
               headers=headers
           )
 
@@ -372,7 +655,11 @@ jobs:
 
               for event in events:
 
-                  if event.get("type") in [
+                  event_type = event.get(
+                      "type"
+                  )
+
+                  if event_type in [
                       "PushEvent",
                       "PullRequestEvent",
                       "IssuesEvent",
@@ -380,134 +667,299 @@ jobs:
                       "CreateEvent"
                   ]:
 
-                      date = event.get("created_at", "")[:10]
+                      created = event.get(
+                          "created_at",
+                          ""
+                      )
 
-                      if date:
-                          active_days.add(date)
+                      if created:
+
+                          date = created[:10]
+
+                          active_days.add(
+                              date
+                          )
+
+
+              today = datetime.now(
+                  timezone.utc
+              ).date()
+
 
               current_streak = 0
-              check_date = end
 
-              while check_date.isoformat() in active_days:
+              check = today
+
+              while check.isoformat() in active_days:
 
                   current_streak += 1
-                  check_date -= timedelta(days=1)
 
-              longest_streak = current_streak
+                  from datetime import timedelta
+
+                  check -= timedelta(
+                      days=1
+                  )
+
+
+              activity_days = len(
+                  active_days
+              )
+
 
               svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
-              width="495"
-              height="220"
-              viewBox="0 0 495 220">
+              width="820"
+              height="250"
+              viewBox="0 0 820 250">
+
+              <defs>
+
+                <linearGradient id="streakbg"
+                  x1="0%" y1="0%"
+                  x2="100%" y2="100%">
+
+                  <stop offset="0%"
+                    stop-color="#161b22"/>
+
+                  <stop offset="100%"
+                    stop-color="#0d1117"/>
+
+                </linearGradient>
+
+                <linearGradient id="fire"
+                  x1="0%" y1="0%"
+                  x2="100%" y2="0%">
+
+                  <stop offset="0%"
+                    stop-color="#f85149"/>
+
+                  <stop offset="100%"
+                    stop-color="#ff9b4a"/>
+
+                </linearGradient>
+
+              </defs>
+
 
               <rect
-                width="495"
-                height="220"
-                rx="15"
-                fill="#1a1b27"
+                x="2"
+                y="2"
+                width="816"
+                height="246"
+                rx="20"
+                fill="url(#streakbg)"
+                stroke="#30363d"
+              />
+
+
+              <text
+                x="35"
+                y="48"
+                fill="#f0f6fc"
+                font-size="23"
+                font-family="Arial"
+                font-weight="bold">
+
+                Contribution Streak
+
+              </text>
+
+
+              <text
+                x="35"
+                y="75"
+                fill="#8b949e"
+                font-size="13"
+                font-family="Arial">
+
+                Keep building. Keep shipping. Keep contributing.
+
+              </text>
+
+
+              <line
+                x1="35"
+                y1="95"
+                x2="785"
+                y2="95"
+                stroke="#21262d"
+              />
+
+
+              <!-- Current -->
+
+              <rect
+                x="35"
+                y="120"
+                width="230"
+                height="85"
+                rx="14"
+                fill="#161b22"
+                stroke="#30363d"
               />
 
               <text
-                x="30"
-                y="45"
-                fill="#70a5fd"
-                font-size="24"
-                font-family="Arial, sans-serif"
-                font-weight="bold">
-                Contribution Streak
-              </text>
-
-              <text
-                x="30"
-                y="100"
-                fill="#ffffff"
-                font-size="16"
-                font-family="Arial, sans-serif">
-                Current Streak
-              </text>
-
-              <text
-                x="450"
-                y="100"
-                text-anchor="end"
-                fill="#70a5fd"
-                font-size="24"
-                font-family="Arial, sans-serif"
-                font-weight="bold">
-                {current_streak} days
-              </text>
-
-              <text
-                x="30"
-                y="150"
-                fill="#ffffff"
-                font-size="16"
-                font-family="Arial, sans-serif">
-                Activity Detected
-              </text>
-
-              <text
-                x="450"
-                y="150"
-                text-anchor="end"
-                fill="#70a5fd"
-                font-size="20"
-                font-family="Arial, sans-serif"
-                font-weight="bold">
-                {len(active_days)} days
-              </text>
-
-              <text
-                x="30"
-                y="195"
+                x="58"
+                y="148"
                 fill="#8b949e"
                 font-size="12"
-                font-family="Arial, sans-serif">
-                github.com/{username}
+                font-family="Arial">
+
+                CURRENT STREAK
+
+              </text>
+
+              <text
+                x="58"
+                y="185"
+                fill="url(#fire)"
+                font-size="28"
+                font-family="Arial"
+                font-weight="bold">
+
+                🔥 {current_streak} days
+
+              </text>
+
+
+              <!-- Activity -->
+
+              <rect
+                x="295"
+                y="120"
+                width="230"
+                height="85"
+                rx="14"
+                fill="#161b22"
+                stroke="#30363d"
+              />
+
+              <text
+                x="318"
+                y="148"
+                fill="#8b949e"
+                font-size="12"
+                font-family="Arial">
+
+                ACTIVE DAYS
+
+              </text>
+
+              <text
+                x="318"
+                y="185"
+                fill="#58a6ff"
+                font-size="28"
+                font-family="Arial"
+                font-weight="bold">
+
+                {activity_days}
+
+              </text>
+
+
+              <!-- Status -->
+
+              <rect
+                x="555"
+                y="120"
+                width="230"
+                height="85"
+                rx="14"
+                fill="#161b22"
+                stroke="#30363d"
+              />
+
+              <text
+                x="578"
+                y="148"
+                fill="#8b949e"
+                font-size="12"
+                font-family="Arial">
+
+                STATUS
+
+              </text>
+
+              <text
+                x="578"
+                y="185"
+                fill="#3fb950"
+                font-size="22"
+                font-family="Arial"
+                font-weight="bold">
+
+                ACTIVE
+
+              </text>
+
+
+              <text
+                x="35"
+                y="232"
+                fill="#6e7681"
+                font-size="10"
+                font-family="Arial">
+
+                github.com/Mystifying7
+
               </text>
 
               </svg>'''
+
 
           except Exception:
 
-              svg = '''<svg xmlns="http://www.w3.org/2000/svg"
-              width="495"
-              height="220">
+              svg = '''
+              <svg xmlns="http://www.w3.org/2000/svg"
+              width="820"
+              height="250">
 
               <rect
-                width="495"
-                height="220"
-                rx="15"
-                fill="#1a1b27"/>
+                width="820"
+                height="250"
+                rx="20"
+                fill="#0d1117"
+                stroke="#30363d"/>
 
               <text
-                x="30"
-                y="50"
-                fill="#70a5fd"
-                font-size="24"
+                x="35"
+                y="55"
+                fill="#f0f6fc"
+                font-size="23"
                 font-family="Arial"
                 font-weight="bold">
+
                 Contribution Streak
+
               </text>
 
               <text
-                x="30"
+                x="35"
                 y="110"
-                fill="#ffffff"
-                font-size="16"
+                fill="#8b949e"
+                font-size="15"
                 font-family="Arial">
+
                 GitHub contribution data unavailable
+
               </text>
 
-              </svg>'''
+              </svg>
+              '''
 
-          Path("generated-stats/streak.svg").write_text(svg)
 
-          print("Contribution Streak generated successfully.")
+          Path(
+              "generated-stats/streak.svg"
+          ).write_text(svg)
+
+          print(
+              "Premium streak stats generated."
+          )
           PY
 
+
       # ---------------------------------------
-      # 7. Commit Generated Files
+      # 7. Commit Generated SVGs
       # ---------------------------------------
       - name: Commit Updated Stats
         run: |
@@ -516,6 +968,7 @@ jobs:
 
           git add generated-stats/
 
-          git diff --cached --quiet || git commit -m "Update GitHub profile stats"
+          git diff --cached --quiet || \
+          git commit -m "Update GitHub profile stats"
 
           git push
