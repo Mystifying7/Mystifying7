@@ -1,199 +1,294 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-    width="820"
-    height="250"
-    viewBox="0 0 820 250">
+width="820"
+height="270"
+viewBox="0 0 820 270">
 
-    <defs>
+<defs>
 
-      <linearGradient id="streakbg"
-        x1="0%" y1="0%"
-        x2="100%" y2="100%">
+  <linearGradient
+    id="overviewBg"
+    x1="0%"
+    y1="0%"
+    x2="100%"
+    y2="100%">
 
-        <stop offset="0%"
-          stop-color="#161b22"/>
+    <stop
+      offset="0%"
+      stop-color="#0d1117"/>
 
-        <stop offset="100%"
-          stop-color="#0d1117"/>
+    <stop
+      offset="100%"
+      stop-color="#161b22"/>
 
-      </linearGradient>
+  </linearGradient>
 
-      <linearGradient id="fire"
-        x1="0%" y1="0%"
-        x2="100%" y2="0%">
+  <linearGradient
+    id="blueGlow"
+    x1="0%"
+    y1="0%"
+    x2="100%"
+    y2="0%">
 
-        <stop offset="0%"
-          stop-color="#f85149"/>
+    <stop
+      offset="0%"
+      stop-color="#00d4ff"/>
 
-        <stop offset="100%"
-          stop-color="#ff9b4a"/>
+    <stop
+      offset="100%"
+      stop-color="#58a6ff"/>
 
-      </linearGradient>
+  </linearGradient>
 
-    </defs>
-
-
-    <rect
-      x="2"
-      y="2"
-      width="816"
-      height="246"
-      rx="20"
-      fill="url(#streakbg)"
-      stroke="#30363d"
-    />
-
-
-    <text
-      x="35"
-      y="48"
-      fill="#f0f6fc"
-      font-size="23"
-      font-family="Arial"
-      font-weight="bold">
-
-      Contribution Streak
-
-    </text>
+</defs>
 
 
-    <text
-      x="35"
-      y="75"
-      fill="#8b949e"
-      font-size="13"
-      font-family="Arial">
+<!-- Main Card -->
 
-      Keep building. Keep shipping. Keep contributing.
-
-    </text>
-
-
-    <line
-      x1="35"
-      y1="95"
-      x2="785"
-      y2="95"
-      stroke="#21262d"
-    />
+<rect
+  x="2"
+  y="2"
+  width="816"
+  height="266"
+  rx="20"
+  fill="url(#overviewBg)"
+  stroke="#1f6feb"
+  stroke-width="1.5"
+/>
 
 
-    <!-- Current -->
+<!-- Header -->
 
-    <rect
-      x="35"
-      y="120"
-      width="230"
-      height="85"
-      rx="14"
-      fill="#161b22"
-      stroke="#30363d"
-    />
+<text
+  x="35"
+  y="42"
+  fill="#f0f6fc"
+  font-size="21"
+  font-family="Arial, sans-serif"
+  font-weight="bold">
 
-    <text
-      x="58"
-      y="148"
-      fill="#8b949e"
-      font-size="12"
-      font-family="Arial">
+  GitHub Contribution Overview
 
-      CURRENT STREAK
-
-    </text>
-
-    <text
-      x="58"
-      y="185"
-      fill="url(#fire)"
-      font-size="28"
-      font-family="Arial"
-      font-weight="bold">
-
-      🔥 4 days
-
-    </text>
+</text>
 
 
-    <!-- Activity -->
+<text
+  x="35"
+  y="67"
+  fill="#8b949e"
+  font-size="12"
+  font-family="Arial, sans-serif">
 
-    <rect
-      x="295"
-      y="120"
-      width="230"
-      height="85"
-      rx="14"
-      fill="#161b22"
-      stroke="#30363d"
-    />
+  @Mystifying7
 
-    <text
-      x="318"
-      y="148"
-      fill="#8b949e"
-      font-size="12"
-      font-family="Arial">
-
-      ACTIVE DAYS
-
-    </text>
-
-    <text
-      x="318"
-      y="185"
-      fill="#58a6ff"
-      font-size="28"
-      font-family="Arial"
-      font-weight="bold">
-
-      6
-
-    </text>
+</text>
 
 
-    <!-- Status -->
-
-    <rect
-      x="555"
-      y="120"
-      width="230"
-      height="85"
-      rx="14"
-      fill="#161b22"
-      stroke="#30363d"
-    />
-
-    <text
-      x="578"
-      y="148"
-      fill="#8b949e"
-      font-size="12"
-      font-family="Arial">
-
-      STATUS
-
-    </text>
-
-    <text
-      x="578"
-      y="185"
-      fill="#3fb950"
-      font-size="22"
-      font-family="Arial"
-      font-weight="bold">
-
-      ACTIVE
-
-    </text>
+<line
+  x1="35"
+  y1="88"
+  x2="785"
+  y2="88"
+  stroke="#21262d"
+  stroke-width="1"
+/>
 
 
-    <text
-      x="35"
-      y="232"
-      fill="#6e7681"
-      font-size="10"
-      font-family="Arial">
+<!-- Total Contributions -->
 
-      github.com/Mystifying7
+<rect
+  x="35"
+  y="110"
+  width="225"
+  height="105"
+  rx="14"
+  fill="#0d1117"
+  stroke="#21262d"
+/>
 
-    </text>
+<text
+  x="58"
+  y="142"
+  fill="#8b949e"
+  font-size="11"
+  font-family="Arial, sans-serif">
 
-    </svg>
+  TOTAL CONTRIBUTIONS
+
+</text>
+
+<text
+  x="58"
+  y="182"
+  fill="#58a6ff"
+  font-size="30"
+  font-family="Arial, sans-serif"
+  font-weight="bold">
+
+  181
+
+</text>
+
+<text
+  x="58"
+  y="202"
+  fill="#6e7681"
+  font-size="10"
+  font-family="Arial, sans-serif">
+
+  Jul 20 - Present
+
+</text>
+
+
+<!-- Divider -->
+
+<line
+  x1="275"
+  y1="112"
+  x2="275"
+  y2="213"
+  stroke="#00d4ff"
+  stroke-opacity="0.35"
+/>
+
+
+<!-- Current Streak -->
+
+<rect
+  x="297"
+  y="110"
+  width="225"
+  height="105"
+  rx="14"
+  fill="#0d1117"
+  stroke="#21262d"
+/>
+
+<text
+  x="320"
+  y="142"
+  fill="#8b949e"
+  font-size="11"
+  font-family="Arial, sans-serif">
+
+  CURRENT STREAK
+
+</text>
+
+<text
+  x="320"
+  y="182"
+  fill="#00d4ff"
+  font-size="30"
+  font-family="Arial, sans-serif"
+  font-weight="bold">
+
+  4
+
+</text>
+
+<text
+  x="320"
+  y="202"
+  fill="#6e7681"
+  font-size="10"
+  font-family="Arial, sans-serif">
+
+  consecutive active days
+
+</text>
+
+
+<!-- Divider -->
+
+<line
+  x1="537"
+  y1="112"
+  x2="537"
+  y2="213"
+  stroke="#00d4ff"
+  stroke-opacity="0.35"
+/>
+
+
+<!-- Longest Streak -->
+
+<rect
+  x="559"
+  y="110"
+  width="225"
+  height="105"
+  rx="14"
+  fill="#0d1117"
+  stroke="#21262d"
+/>
+
+<text
+  x="582"
+  y="142"
+  fill="#8b949e"
+  font-size="11"
+  font-family="Arial, sans-serif">
+
+  LONGEST STREAK
+
+</text>
+
+<text
+  x="582"
+  y="182"
+  fill="#a371f7"
+  font-size="30"
+  font-family="Arial, sans-serif"
+  font-weight="bold">
+
+  7
+
+</text>
+
+<text
+  x="582"
+  y="202"
+  fill="#6e7681"
+  font-size="10"
+  font-family="Arial, sans-serif">
+
+  best contribution streak
+
+</text>
+
+
+<!-- Footer -->
+
+<text
+  x="35"
+  y="245"
+  fill="#6e7681"
+  font-size="10"
+  font-family="Arial, sans-serif">
+
+  github.com/Mystifying7
+
+</text>
+
+
+<circle
+  cx="770"
+  cy="242"
+  r="5"
+  fill="#3fb950"
+/>
+
+<text
+  x="755"
+  y="245"
+  text-anchor="end"
+  fill="#8b949e"
+  font-size="10"
+  font-family="Arial, sans-serif">
+
+  LIVE DATA
+
+</text>
+
+</svg>
