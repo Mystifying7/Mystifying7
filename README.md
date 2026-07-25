@@ -182,25 +182,30 @@ AI-Powered Recommendation Engine — Content-based movie discovery driven by NLP
 ---
 
 ### 🏆 Achievements & GitHub Stats
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mystifying7&theme=tokyonight&hide_border=true&fire=8A2BE2&ring=4B0082&currStreakLabel=A970FF" alt="GitHub Streak" />
-</div>
 
-<!-- <br>
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Mystifying7&theme=tokyonight&show_icons=true&hide_border=false" alt="GitHub Stats" />
-</div>
+<p align="center">
+  <img
+    src="./generated-stats/github-stats.svg"
+    alt="GitHub Stats"
+    width="495"
+  />
+</p>
 
+<p align="center">
+  <img
+    src="./generated-stats/top-languages.svg"
+    alt="Top Languages"
+    width="495"
+  />
+</p>
 
-<br>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mystifying7&theme=tokyonight&layout=compact&hide_border=false" alt="Top Languages" width="80%" />
-</div>
-
-
-
-<br> -->
+<p align="center">
+  <img
+    src="./generated-stats/streak.svg"
+    alt="Contribution Streak"
+    width="495"
+  />
+</p>
 
 ---
 
