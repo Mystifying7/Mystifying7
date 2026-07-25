@@ -185,14 +185,6 @@ AI-Powered Recommendation Engine — Content-based movie discovery driven by NLP
 
 <p align="center">
   <img
-    src="./generated-stats/github-stats.svg"
-    alt="GitHub Stats"
-    width="495"
-  />
-</p>
-
-<p align="center">
-  <img
     src="./generated-stats/top-languages.svg"
     alt="Top Languages"
     width="495"
