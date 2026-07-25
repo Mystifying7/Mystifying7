@@ -1,7 +1,7 @@
 name: Update GitHub Profile Stats
 
 on:
-  schedule: 
+  schedule:
     # Runs every day at midnight UTC
     - cron: "0 0 * * *"
 
@@ -35,7 +35,7 @@ jobs:
       # ---------------------------------------
       - name: Create Assets Folder
         run: |
-          mkdir -p assets
+          mkdir -p assets || true
 
       # ---------------------------------------
       # 4. Generate GitHub Stats
