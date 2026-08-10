@@ -70,65 +70,12 @@ viewBox="0 0 820 350">
       cx="45"
       cy="120"
       r="6"
-      fill="#f1e05a"
-    />
-
-    <text
-      x="65"
-      y="125"
-      fill="#f0f6fc"
-      font-size="14"
-      font-family="Arial">
-
-      JavaScript
-
-    </text>
-
-
-    <text
-      x="760"
-      y="125"
-      text-anchor="end"
-      fill="#8b949e"
-      font-size="13"
-      font-family="Arial">
-
-      43.3%
-
-    </text>
-
-
-    <rect
-      x="65"
-      y="137"
-      width="500"
-      height="7"
-      rx="4"
-      fill="#21262d"
-    />
-
-
-    <rect
-      x="65"
-      y="137"
-      width="216.35328728575084"
-      height="7"
-      rx="4"
-      fill="#f1e05a"
-    />
-
-    
-
-    <circle
-      cx="45"
-      cy="156"
-      r="6"
       fill="#3572A5"
     />
 
     <text
       x="65"
-      y="161"
+      y="125"
       fill="#f0f6fc"
       font-size="14"
       font-family="Arial">
@@ -140,13 +87,66 @@ viewBox="0 0 820 350">
 
     <text
       x="760"
+      y="125"
+      text-anchor="end"
+      fill="#8b949e"
+      font-size="13"
+      font-family="Arial">
+
+      43.2%
+
+    </text>
+
+
+    <rect
+      x="65"
+      y="137"
+      width="500"
+      height="7"
+      rx="4"
+      fill="#21262d"
+    />
+
+
+    <rect
+      x="65"
+      y="137"
+      width="215.83888639647023"
+      height="7"
+      rx="4"
+      fill="#3572A5"
+    />
+
+    
+
+    <circle
+      cx="45"
+      cy="156"
+      r="6"
+      fill="#f1e05a"
+    />
+
+    <text
+      x="65"
+      y="161"
+      fill="#f0f6fc"
+      font-size="14"
+      font-family="Arial">
+
+      JavaScript
+
+    </text>
+
+
+    <text
+      x="760"
       y="161"
       text-anchor="end"
       fill="#8b949e"
       font-size="13"
       font-family="Arial">
 
-      41.1%
+      41.8%
 
     </text>
 
@@ -164,10 +164,10 @@ viewBox="0 0 820 350">
     <rect
       x="65"
       y="173"
-      width="205.63869702396178"
+      width="208.85622677077205"
       height="7"
       rx="4"
-      fill="#3572A5"
+      fill="#f1e05a"
     />
 
     
@@ -199,7 +199,7 @@ viewBox="0 0 820 350">
       font-size="13"
       font-family="Arial">
 
-      9.0%
+      8.6%
 
     </text>
 
@@ -217,7 +217,7 @@ viewBox="0 0 820 350">
     <rect
       x="65"
       y="209"
-      width="44.79619681077854"
+      width="43.24392181396862"
       height="7"
       rx="4"
       fill="#563d7c"
@@ -252,7 +252,7 @@ viewBox="0 0 820 350">
       font-size="13"
       font-family="Arial">
 
-      6.6%
+      6.4%
 
     </text>
 
@@ -270,7 +270,7 @@ viewBox="0 0 820 350">
     <rect
       x="65"
       y="245"
-      width="33.211818879508826"
+      width="32.060965018789176"
       height="7"
       rx="4"
       fill="#e34c26"
