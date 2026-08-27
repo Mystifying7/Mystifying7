@@ -133,7 +133,7 @@ Cyber Security & Data Privacy — Detect outbound exposure and inspect APK risk.
 | **Repository** | [View on GitHub](https://github.com/Mystifying7/Forensic-Deepfake-Shield) |
 | **Image** | <img width="200" alt="Forensic Deepfake Shield Demo" src="https://github.com/user-attachments/assets/7012e234-61fd-4785-9df5-58282ae0f67c" /> |
 
-**Project Explanation:** Architected an offline multi-modal digital forensics engine that identifies video face-swaps and synthetic audio cloning[cite: 1]. The system extracts spatial boundary anomalies with Grad-CAM heatmaps, computes Mel-Spectrogram phase patterns, and verifies Phoneme-Viseme lip-sync cross-correlation, packaging all findings into tamper-proof SHA-256 signed PDF evidence reports.
+**Project Explanation:** Architected an offline multi-modal digital forensics engine that identifies video face-swaps and synthetic audio cloning. The system extracts spatial boundary anomalies with Grad-CAM heatmaps, computes Mel-Spectrogram phase patterns, and verifies Phoneme-Viseme lip-sync cross-correlation, packaging all findings into tamper-proof SHA-256 signed PDF evidence reports.
 </details>
 
 <details>
