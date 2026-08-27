@@ -120,19 +120,20 @@ Cyber Security & Data Privacy — Detect outbound exposure and inspect APK risk.
 <details>
 <summary><b>🛡️ Forensic Shield </b></summary>
 <br>
-Cyber Security & AI Forensics — Multimodal deepfake and synthetic voice clone detection engine[cite: 1].
+  
+**Cyber Security & AI Forensics** — Multimodal deepfake and synthetic voice clone detection engine.
 
 | Category | Details |
 | :--- | :--- |
-| **Stack** | Python, Flask, PyTorch, ONNX Runtime (INT8), OpenCV, Librosa, React.js, Three.js, ReportLab[cite: 1] |
-| **Scale** | Edge CPU execution, WebGL 3D dashboard & unattended CLI batch processing[cite: 1] |
-| **Performance** | INT8 dynamic quantization (~70% compute reduction), sub-second frame sub-sampling on standard 8GB RAM CPUs[cite: 1] |
-| **Security** | SHA-256 cryptographic chain-of-custody tracking, 100% offline zero-leak memory wipe protocols[cite: 1] |
-| **Impact** | Generates court-admissible PDF reports with Grad-CAM heatmaps for cyber cells, media houses, and forensic labs[cite: 1] |
+| **Stack** | Python, Flask, PyTorch, ONNX Runtime (INT8), OpenCV, Librosa, React.js, Three.js, ReportLab |
+| **Scale** | Edge CPU execution, WebGL 3D dashboard & unattended CLI batch processing |
+| **Performance** | INT8 dynamic quantization (~70% compute reduction), sub-second frame sub-sampling on standard 8GB RAM CPUs |
+| **Security** | SHA-256 cryptographic chain-of-custody tracking, 100% offline zero-leak memory wipe protocols |
+| **Impact** | Generates court-admissible PDF reports with Grad-CAM heatmaps for cyber cells, media houses, and forensic labs |
 | **Repository** | [View on GitHub](https://github.com/Mystifying7/Forensic-Deepfake-Shield) |
 | **Image** | <img width="200" alt="Forensic Deepfake Shield Demo" src="https://github.com/user-attachments/assets/7012e234-61fd-4785-9df5-58282ae0f67c" /> |
 
-**Project Explanation:** Architected an offline multi-modal digital forensics engine that identifies video face-swaps and synthetic audio cloning[cite: 1]. The system extracts spatial boundary anomalies with Grad-CAM heatmaps, computes Mel-Spectrogram phase patterns, and verifies Phoneme-Viseme lip-sync cross-correlation, packaging all findings into tamper-proof SHA-256 signed PDF evidence reports[cite: 1].
+**Project Explanation:** Architected an offline multi-modal digital forensics engine that identifies video face-swaps and synthetic audio cloning[cite: 1]. The system extracts spatial boundary anomalies with Grad-CAM heatmaps, computes Mel-Spectrogram phase patterns, and verifies Phoneme-Viseme lip-sync cross-correlation, packaging all findings into tamper-proof SHA-256 signed PDF evidence reports.
 </details>
 
 <details>
@@ -148,7 +149,6 @@ Full-Stack PropTech — Real-time real estate valuations powered by Machine Lear
 | **Security** | Web API input validation |
 | **Impact** | Provides transparent property pricing using historical data vectors |
 | **Repository** | [View on GitHub](https://github.com/Mystifying7/House_Price_Project) |
-| **Live** | [Live](https://house-price-project-ten.vercel.app/) |
 | **Image** | <img width="200" alt="PropEngine Demo" src="https://github.com/user-attachments/assets/857cec57-2cce-4950-998c-5dbe6ad99318" /> | 
 
 **Project Explanation:** Engineered a predictive platform using supervised Machine Learning algorithms. By processing structured historical real estate data, the application successfully delivers dynamic and highly accurate property valuations through an accessible web interface.
