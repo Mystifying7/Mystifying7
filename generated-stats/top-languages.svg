@@ -70,65 +70,12 @@ viewBox="0 0 820 350">
       cx="45"
       cy="120"
       r="6"
-      fill="#f1e05a"
-    />
-
-    <text
-      x="65"
-      y="125"
-      fill="#f0f6fc"
-      font-size="14"
-      font-family="Arial">
-
-      JavaScript
-
-    </text>
-
-
-    <text
-      x="760"
-      y="125"
-      text-anchor="end"
-      fill="#8b949e"
-      font-size="13"
-      font-family="Arial">
-
-      51.4%
-
-    </text>
-
-
-    <rect
-      x="65"
-      y="137"
-      width="500"
-      height="7"
-      rx="4"
-      fill="#21262d"
-    />
-
-
-    <rect
-      x="65"
-      y="137"
-      width="257.1898966934259"
-      height="7"
-      rx="4"
-      fill="#f1e05a"
-    />
-
-    
-
-    <circle
-      cx="45"
-      cy="156"
-      r="6"
       fill="#3572A5"
     />
 
     <text
       x="65"
-      y="161"
+      y="125"
       fill="#f0f6fc"
       font-size="14"
       font-family="Arial">
@@ -140,13 +87,66 @@ viewBox="0 0 820 350">
 
     <text
       x="760"
+      y="125"
+      text-anchor="end"
+      fill="#8b949e"
+      font-size="13"
+      font-family="Arial">
+
+      96.5%
+
+    </text>
+
+
+    <rect
+      x="65"
+      y="137"
+      width="500"
+      height="7"
+      rx="4"
+      fill="#21262d"
+    />
+
+
+    <rect
+      x="65"
+      y="137"
+      width="482.49344941552766"
+      height="7"
+      rx="4"
+      fill="#3572A5"
+    />
+
+    
+
+    <circle
+      cx="45"
+      cy="156"
+      r="6"
+      fill="#f1e05a"
+    />
+
+    <text
+      x="65"
+      y="161"
+      fill="#f0f6fc"
+      font-size="14"
+      font-family="Arial">
+
+      JavaScript
+
+    </text>
+
+
+    <text
+      x="760"
       y="161"
       text-anchor="end"
       fill="#8b949e"
       font-size="13"
       font-family="Arial">
 
-      37.2%
+      2.0%
 
     </text>
 
@@ -164,10 +164,10 @@ viewBox="0 0 820 350">
     <rect
       x="65"
       y="173"
-      width="185.8754622653425"
+      width="10.15278639394868"
       height="7"
       rx="4"
-      fill="#3572A5"
+      fill="#f1e05a"
     />
 
     
@@ -199,7 +199,7 @@ viewBox="0 0 820 350">
       font-size="13"
       font-family="Arial">
 
-      6.8%
+      0.6%
 
     </text>
 
@@ -217,7 +217,7 @@ viewBox="0 0 820 350">
     <rect
       x="65"
       y="209"
-      width="34.101156434410456"
+      width="3.2493232577138706"
       height="7"
       rx="4"
       fill="#563d7c"
@@ -252,7 +252,7 @@ viewBox="0 0 820 350">
       font-size="13"
       font-family="Arial">
 
-      4.6%
+      0.5%
 
     </text>
 
@@ -270,10 +270,116 @@ viewBox="0 0 820 350">
     <rect
       x="65"
       y="245"
-      width="22.833484606821113"
+      width="2.7079500800856446"
       height="7"
       rx="4"
       fill="#e34c26"
+    />
+
+    
+
+    <circle
+      cx="45"
+      cy="264"
+      r="6"
+      fill="#58a6ff"
+    />
+
+    <text
+      x="65"
+      y="269"
+      fill="#f0f6fc"
+      font-size="14"
+      font-family="Arial">
+
+      PowerShell
+
+    </text>
+
+
+    <text
+      x="760"
+      y="269"
+      text-anchor="end"
+      fill="#8b949e"
+      font-size="13"
+      font-family="Arial">
+
+      0.3%
+
+    </text>
+
+
+    <rect
+      x="65"
+      y="281"
+      width="500"
+      height="7"
+      rx="4"
+      fill="#21262d"
+    />
+
+
+    <rect
+      x="65"
+      y="281"
+      width="1.3266895427725078"
+      height="7"
+      rx="4"
+      fill="#58a6ff"
+    />
+
+    
+
+    <circle
+      cx="45"
+      cy="300"
+      r="6"
+      fill="#58a6ff"
+    />
+
+    <text
+      x="65"
+      y="305"
+      fill="#f0f6fc"
+      font-size="14"
+      font-family="Arial">
+
+      Batchfile
+
+    </text>
+
+
+    <text
+      x="760"
+      y="305"
+      text-anchor="end"
+      fill="#8b949e"
+      font-size="13"
+      font-family="Arial">
+
+      0.0%
+
+    </text>
+
+
+    <rect
+      x="65"
+      y="317"
+      width="500"
+      height="7"
+      rx="4"
+      fill="#21262d"
+    />
+
+
+    <rect
+      x="65"
+      y="317"
+      width="0.06980130995168428"
+      height="7"
+      rx="4"
+      fill="#58a6ff"
     />
 
     
