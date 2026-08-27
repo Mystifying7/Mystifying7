@@ -98,6 +98,26 @@ Cyber Security & Data Privacy — Detect outbound exposure and inspect APK risk.
 </details>
 
 <details>
+<summary>🔍 <b>SmartDoc AI</b></summary>
+<br>
+
+**Generative AI & Information Retrieval** — Precision technical search and hallucination-free documentation synthesis.
+
+| Category | Details |
+| :--- | :--- |
+| **Stack** | Python, FastAPI, FAISS, BM25, SentenceTransformers, Groq (Llama 3), HTML/JS |
+| **Scale** | Corpus-wide multi-document indexing with sub-second hybrid retrieval |
+| **Performance** | Two-stage retrieve-and-rerank pipeline with neural Cross-Encoder scoring |
+| **Security** | Zero-hallucination guardrails with deterministic context grounding |
+| **Impact** | Automates technical knowledge discovery with auditable source citations |
+| **Repository** | [View on GitHub](https://github.com/Mystifying7/hybrid_rag_project) |
+| **Image** | <img src="hybrid RAG .png" alt="SmartDoc AI Dashboard" width="200" /> |
+
+**Project Explanation:** Built an enterprise-grade hybrid retrieval-augmented generation (RAG) system combining BM25 lexical search and FAISS dense vector embeddings with Reciprocal Rank Fusion (RRF). The system integrates a Cross-Encoder neural reranker and strict LLM guardrails to deliver accurate, fully cited technical answers without hallucinations.
+
+</details>
+
+<details>
 <summary><b>🏢 PROP_ENGINE.ai</b></summary>
 <br>
 Full-Stack PropTech — Real-time real estate valuations powered by Machine Learning.
