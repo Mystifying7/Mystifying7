@@ -118,6 +118,24 @@ Cyber Security & Data Privacy — Detect outbound exposure and inspect APK risk.
 </details>
 
 <details>
+<summary><b>🛡️ Forensic Shield </b></summary>
+<br>
+Cyber Security & AI Forensics — Multimodal deepfake and synthetic voice clone detection engine[cite: 1].
+
+| Category | Details |
+| :--- | :--- |
+| **Stack** | Python, Flask, PyTorch, ONNX Runtime (INT8), OpenCV, Librosa, React.js, Three.js, ReportLab[cite: 1] |
+| **Scale** | Edge CPU execution, WebGL 3D dashboard & unattended CLI batch processing[cite: 1] |
+| **Performance** | INT8 dynamic quantization (~70% compute reduction), sub-second frame sub-sampling on standard 8GB RAM CPUs[cite: 1] |
+| **Security** | SHA-256 cryptographic chain-of-custody tracking, 100% offline zero-leak memory wipe protocols[cite: 1] |
+| **Impact** | Generates court-admissible PDF reports with Grad-CAM heatmaps for cyber cells, media houses, and forensic labs[cite: 1] |
+| **Repository** | [View on GitHub](https://github.com/Mystifying7/Forensic-Deepfake-Shield) |
+| **Image** | <img width="200" alt="Forensic Deepfake Shield Demo" src="https://github.com/user-attachments/assets/7012e234-61fd-4785-9df5-58282ae0f67c" /> |
+
+**Project Explanation:** Architected an offline multi-modal digital forensics engine that identifies video face-swaps and synthetic audio cloning[cite: 1]. The system extracts spatial boundary anomalies with Grad-CAM heatmaps, computes Mel-Spectrogram phase patterns, and verifies Phoneme-Viseme lip-sync cross-correlation, packaging all findings into tamper-proof SHA-256 signed PDF evidence reports[cite: 1].
+</details>
+
+<details>
 <summary><b>🏢 PROP_ENGINE.ai</b></summary>
 <br>
 Full-Stack PropTech — Real-time real estate valuations powered by Machine Learning.
