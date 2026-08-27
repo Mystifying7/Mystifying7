@@ -46,7 +46,7 @@ I am an enthusiastic 5th-semester Computer Science Engineering student diving de
 <p align="center">
   <strong>Frontend Integration</strong><br>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js&theme=dark" alt="Frontend" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,react,ts&theme=dark" alt="Frontend" />
   </a>
 </p>
 
